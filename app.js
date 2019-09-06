@@ -68,3 +68,43 @@ console.log(stuff.counter(["aea","12132","31123","232"]));
 console.log(stuff.adder(2,3));
 
 
+
+
+
+
+
+// The Node Event Emitter
+
+var events = require('events');
+var util = require('util');
+
+
+// element.on('click', function(){
+
+// })
+
+// var myEmitter = new events.EventEmitter();
+// myEmitter.on('someEvent', function(msg){
+//     console.log(msg);
+// });
+
+// myEmitter.emit('someEvent', "the event was emiited");
+
+var person = function(name){
+    this.name = name;
+
+};
+
+
+util.inherits(person, events.EventEmitter);
+var a = new person("Hey a");
+var b = new person("Hey b");
+var c = new person("Hey c");
+
+var people = [a,b,c];
+people.forEach(function(person) {
+    person.on('speak',function(msg){
+        console.log(person.name+' said '+msg);
+    });
+});
+a.emit('speak', 'Hey Dudes');
