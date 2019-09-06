@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pm-sharma/nodeJS-Learning.git"
+  },
+  "author": "Purushottam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pm-sharma/nodeJS-Learning/issues"
+  },
+  "homepage": "https://github.com/pm-sharma/nodeJS-Learning#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
