@@ -51,11 +51,20 @@
 
 
 
-// MODULE EXPORTS
-// var counter =  require('./count');
 
+// MODULE EXPORTS
+
+// var counter =  require('./count');
 // console.log(counter(["aea","12132","31123","232"]));
 
 
+
+
+
+
+// Module Pattern
+var stuff =  require('./stuff');
+console.log(stuff.counter(["aea","12132","31123","232"]));
+console.log(stuff.adder(2,3));
 
 
