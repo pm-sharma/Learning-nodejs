@@ -116,7 +116,66 @@
 
 // File reading and writing file
 
-var fs = require('fs');
-var readme = fs.readFileSync('reame.txt','utf8');
-fs.writeFileSync('write.txt',readme)
-console.log(readme);
+// var fs = require('fs');
+// var readme = fs.readFileSync('reame.txt','utf8');
+// fs.writeFileSync('write.txt',readme)
+// console.log(readme);
+
+// fs.unlink('write.txt',function(){
+//     fs.rmdir('stuff');
+// }); 
+
+
+
+
+
+
+
+// Client and Servers
+// Create Server
+
+// var http = require('http');
+// http.createServer(function (req, res) {
+//   console.log('request was made'+req.url);
+//   res.writeHead(200, {'Content-Type': 'text/plain'});
+//   res.end('Hey World How are you !');
+//   console.log("Hello");
+// }).listen(8080);
+
+
+
+
+
+// Streaming and Buffers
+// Readable Stream
+
+// var http = require('http');
+// var fs = require('fs');
+
+// var myReadStream = fs.createReadStream(__dirname+'./reame.txt',utf8);
+
+// myReadStream.on('data',function(chunck){
+//     console.log("Chunck Recived");
+//     console.log(chunck)
+// });
+
+
+
+
+
+
+// Pipes
+
+// var fs = require('fs');
+// var http = require('http');
+
+// var server = http.createServer(function (req, res) {
+//   console.log('request was made'+req.url);
+//   res.writeHead(200, {'Content-Type': 'text/plain'});
+//   var myReadStream = fs.createReadStream('./reame.txt');
+//   myReadStream.pipe(res);
+// });
+
+// server.listen(8000, '127.0.0.1');
+// console.log("Going to complete");
+
