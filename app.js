@@ -63,9 +63,9 @@
 
 
 // Module Pattern
-var stuff =  require('./stuff');
-console.log(stuff.counter(["aea","12132","31123","232"]));
-console.log(stuff.adder(2,3));
+// var stuff =  require('./stuff');
+// console.log(stuff.counter(["aea","12132","31123","232"]));
+// console.log(stuff.adder(2,3));
 
 
 
@@ -75,8 +75,8 @@ console.log(stuff.adder(2,3));
 
 // The Node Event Emitter
 
-var events = require('events');
-var util = require('util');
+// var events = require('events');
+// var util = require('util');
 
 
 // element.on('click', function(){
@@ -90,21 +90,33 @@ var util = require('util');
 
 // myEmitter.emit('someEvent', "the event was emiited");
 
-var person = function(name){
-    this.name = name;
+// var person = function(name){
+//     this.name = name;
 
-};
+// };
 
 
-util.inherits(person, events.EventEmitter);
-var a = new person("Hey a");
-var b = new person("Hey b");
-var c = new person("Hey c");
+// util.inherits(person, events.EventEmitter);
+// var a = new person("Hey a");
+// var b = new person("Hey b");
+// var c = new person("Hey c");
 
-var people = [a,b,c];
-people.forEach(function(person) {
-    person.on('speak',function(msg){
-        console.log(person.name+' said '+msg);
-    });
-});
-a.emit('speak', 'Hey Dudes');
+// var people = [a,b,c];
+// people.forEach(function(person) {
+//     person.on('speak',function(msg){
+//         console.log(person.name+' said '+msg);
+//     });
+// });
+// a.emit('speak', 'Hey Dudes');
+
+
+
+
+
+
+// File reading and writing file
+
+var fs = require('fs');
+var readme = fs.readFileSync('reame.txt','utf8');
+fs.writeFileSync('write.txt',readme)
+console.log(readme);
