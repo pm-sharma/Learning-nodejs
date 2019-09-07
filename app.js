@@ -171,11 +171,46 @@
 
 // var server = http.createServer(function (req, res) {
 //   console.log('request was made'+req.url);
-//   res.writeHead(200, {'Content-Type': 'text/plain'});
-//   var myReadStream = fs.createReadStream('./reame.txt');
+//   res.writeHead(200, {'Content-Type': 'text/plian'});
+//   var myReadStream = fs.createReadStream('./rem.txt');
+
+// Serving Html pages
+
+//   res.writeHead(200, {'Content-Type': 'text/html'});
+//   var myReadStream = fs.createReadStream('./index.html','utf-8');
 //   myReadStream.pipe(res);
 // });
 
 // server.listen(8000, '127.0.0.1');
 // console.log("Going to complete");
+
+
+
+
+
+
+
+
+// Serving JSON Data
+
+
+// var fs = require('fs');
+// var http = require('http');
+
+// var server = http.createServer(function (req, res) {
+//   console.log('request was made'+req.url);
+
+//   res.writeHead(200, {'Content-Type': 'application/json'});
+//   var myObj = {
+//       name : "Pm",
+//       song : "faded"
+//   }
+//   res.end(JSON.stringify(myObj))
+// });
+
+// server.listen(8000, '127.0.0.1');
+// console.log("Going to complete");
+
+
+
 
